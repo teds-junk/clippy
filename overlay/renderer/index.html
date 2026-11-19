@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'" />
+    <title>Clippy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="stage">
+      <div id="bubble" class="hit hidden" role="status" aria-live="polite">
+        <p id="line"></p>
+        <div id="buttons">
+          <button id="yes">Yes</button>
+          <button id="no">No</button>
+        </div>
+      </div>
+
+      <div id="clippy" class="hit idle" title="Clippy">
+        <svg viewBox="0 0 124 200" width="124" height="200" aria-hidden="true">
+          <!-- the wire: three nested U-turns, drawn three times for a metallic edge -->
+          <path id="wire-edge" d="M48 74 V140 A14 14 0 0 0 76 140 V48 A24 24 0 0 0 28 48 V150 A34 34 0 0 0 96 150 V78" />
+          <path id="wire" d="M48 74 V140 A14 14 0 0 0 76 140 V48 A24 24 0 0 0 28 48 V150 A34 34 0 0 0 96 150 V78" />
+          <path id="wire-shine" d="M48 74 V140 A14 14 0 0 0 76 140 V48 A24 24 0 0 0 28 48 V150 A34 34 0 0 0 96 150 V78" />
+
+          <g id="face">
+            <path class="brow" id="brow-l" d="M22 40 Q34 28 47 36" />
+            <path class="brow" id="brow-r" d="M62 33 Q76 24 90 36" />
+            <g class="eye">
+              <ellipse cx="35" cy="58" rx="12" ry="14" />
+              <circle class="pupil" cx="38" cy="60" r="5" />
+            </g>
+            <g class="eye">
+              <ellipse cx="76" cy="56" rx="12" ry="14" />
+              <circle class="pupil" cx="79" cy="58" r="5" />
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
