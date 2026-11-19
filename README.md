@@ -2,7 +2,9 @@
 
 Clippy is back, this time as a Microsoft Foundry agent.
 
-![Clippy popping up over a terminal running azd down: "It looks like you're about to delete me. Would you like help remembering that I've seen all your screenshots?"](docs/clippy.png)
+<video src="https://github.com/teds-junk/clippy/releases/download/media/clippy-on-foundry-with-azd.mp4" controls width="100%" aria-label="Clippy on Microsoft Foundry, deployed with azd"></video>
+
+[Watch the demo video](https://github.com/teds-junk/clippy/releases/download/media/clippy-on-foundry-with-azd.mp4)
 
 This template deploys a prompt agent named `clippy` to Microsoft Foundry and gives
 you a desktop overlay that talks to it. Every few seconds the overlay sends the
