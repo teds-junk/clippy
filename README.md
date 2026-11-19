@@ -2,6 +2,8 @@
 
 Clippy is back, this time as a Microsoft Foundry agent.
 
+![Clippy popping up over a terminal running azd down: "It looks like you're about to delete me. Would you like help remembering that I've seen all your screenshots?"](docs/clippy.png)
+
 This template deploys a prompt agent named `clippy` to Microsoft Foundry and gives
 you a desktop overlay that talks to it. Every few seconds the overlay sends the
 agent a screenshot of your screen. When Clippy sees something it can help with,
@@ -33,7 +35,6 @@ resources from `azure.yaml`.
 **1. Get the template.**
 
 ```sh
-mkdir clippy && cd clippy
 azd init -t teds-junk/clippy
 ```
 
